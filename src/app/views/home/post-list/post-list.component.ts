@@ -8,20 +8,21 @@ import { PostService } from 'src/app/shared/service/post.service';
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.css']
 })
-export class PostListComponent implements OnInit {
+export class PostListComponent {
 
-  posts: Post[];
+  posts: [];
 
   constructor(
     public postService: PostService
   ) { }
 
   ngOnInit(): void {
+    this.getPosts()
   }
   
-  // getPosts() {
-  //   this.postService.getPosts().subscribe(data => {
-  //     this.posts = data.
-  //   }) 
-  // }
+  getPosts() {
+    this.postService.getPosts().subscribe((data: []) => {
+      this.posts = data
+    })
+  }
 }

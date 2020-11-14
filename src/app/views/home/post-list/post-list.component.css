@@ -12,11 +12,11 @@
     box-shadow: 1px 1px #F1F1F1;
 }
 
-.card-container {
+.card-info-container {
     padding: 0 20px 20px 20px;
 }
 
-.card-container h4 {
+.card-info-container h4 {
     color: #B5B5B5;
     font-weight: normal;
 }

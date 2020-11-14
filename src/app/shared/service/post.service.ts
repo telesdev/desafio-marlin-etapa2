@@ -8,7 +8,7 @@ import { Post } from '../model/post.model';
 })
 export class PostService {
 
-  apiUrl: 'https://jsonplaceholder.typicode.com/posts';
+  apiUrl = 'https://jsonplaceholder.typicode.com/posts';
 
   httpOptions = {
     headers: new HttpHeaders({
@@ -20,7 +20,7 @@ export class PostService {
     private httpClient: HttpClient
   ) { }
 
-  public getPosts(): Observable<Post> {
-    return this.httpClient.get<Post>(this.apiUrl)
+  public getPosts() {
+    return this.httpClient.get(this.apiUrl)
   }
 }
