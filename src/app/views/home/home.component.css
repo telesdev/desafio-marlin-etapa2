@@ -1,0 +1,15 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-container {
+    display: flex;
+    padding: 10px 60px 10px 20px;
+}
+
+@media all and (max-width: 800px) {
+    #main-container {
+        display: block;
+        padding: 0;
+    }
+}
