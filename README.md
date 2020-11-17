@@ -10,7 +10,7 @@ O projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) v
 
 O projeto será iniciado na porta 4200.
 
-## Requesitos
+## Requisitos
 
 O projeto consume a api `https://jsonplaceholder.typicode.com/posts`, utilizando o método GET, e mostra cada _notícia_ em um card diferente.
 
